@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="林晓 · 全栈开发者与产品设计师的个人作品集" />
+  <title>林晓 · 作品集</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 背景装饰 -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+
+  <!-- 导航 -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__logo">
+        <span class="nav__mark">LX</span>
+        <span class="nav__name">林晓</span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about">关于</a>
+        <a href="#skills">技能</a>
+        <a href="#projects">作品</a>
+        <a href="#experience">经历</a>
+        <a href="#contact">联系</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="切换菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__avatar" aria-hidden="true">
+          <div class="hero__avatar-ring"></div>
+          <svg viewBox="0 0 120 120" width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="av" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7c5cff"/>
+                <stop offset="100%" stop-color="#22d3ee"/>
+              </linearGradient>
+            </defs>
+            <circle cx="60" cy="60" r="58" fill="url(#av)"/>
+            <text x="60" y="60" text-anchor="middle" dominant-baseline="central"
+                  font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#fff">LX</text>
+          </svg>
+        </div>
+        <p class="hero__eyebrow reveal">你好，我是</p>
+        <h1 class="hero__title reveal">
+          林晓
+          <span class="hero__title-grad">全栈开发者 & 产品设计师</span>
+        </h1>
+        <p class="hero__lead reveal">
+          我用代码与设计打造优雅、好用的数字产品。专注于 Web 应用、交互体验与端到端的产品落地，
+          让技术真正服务于人。
+        </p>
+        <div class="hero__cta reveal">
+          <a href="#projects" class="btn btn--primary">查看作品</a>
+          <a href="#contact" class="btn btn--ghost">联系我</a>
+        </div>
+        <div class="hero__stats reveal">
+          <div class="stat"><strong>5+</strong><span>年经验</span></div>
+          <div class="stat"><strong>30+</strong><span>交付项目</span></div>
+          <div class="stat"><strong>12</strong><span>开源仓库</span></div>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="向下滚动">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <p class="section__eyebrow reveal">关于我</p>
+        <h2 class="section__title reveal">用产品思维，连接技术与用户</h2>
+        <div class="about">
+          <div class="about__text reveal">
+            <p>
+              我是一名兼具工程能力与设计审美全栈开发者，过去五年里在初创团队与大型平台之间穿梭，
+              主导从 0 到 1 的产品构建，也负责过百万级用户产品的体验优化。
+            </p>
+            <p>
+              我相信好的产品来自对细节的执着：清晰的信息架构、顺滑的交互反馈、可维护的工程实现，
+              以及对用户真实场景的共情。工作之余，我热衷于开源、写作与探索新技术。
+            </p>
+          </div>
+          <ul class="about__meta reveal">
+            <li><span>坐标</span><strong>中国 · 上海</strong></li>
+            <li><span>方向</span><strong>Web 全栈 / 产品设计</strong></li>
+            <li><span>状态</span><strong class="pill pill--ok">开放合作机会</strong></li>
+            <li><span>语言</span><strong>中文 / English</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <p class="section__eyebrow reveal">技能栈</p>
+        <h2 class="section__title reveal">我擅长的工具与技术</h2>
+        <div class="skills">
+          <div class="skill-group reveal">
+            <h3>前端</h3>
+            <div class="chips">
+              <span class="chip">TypeScript</span>
+              <span class="chip">React</span>
+              <span class="chip">Vue</span>
+              <span class="chip">Next.js</span>
+              <span class="chip">Tailwind CSS</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3>后端</h3>
+            <div class="chips">
+              <span class="chip">Node.js</span>
+              <span class="chip">Go</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">Redis</span>
+              <span class="chip">GraphQL</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3>工程与设计</h3>
+            <div class="chips">
+              <span class="chip">Docker</span>
+              <span class="chip">CI/CD</span>
+              <span class="chip">Figma</span>
+              <span class="chip">设计系统</span>
+              <span class="chip">动效设计</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="section__eyebrow reveal">精选作品</p>
+        <h2 class="section__title reveal">一些我引以为豪的项目</h2>
+        <div class="projects">
+          <article class="card reveal">
+            <div class="card__thumb card__thumb--1" aria-hidden="true">
+              <svg viewBox="0 0 400 220" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#6366f1"/><stop offset="100%" stop-color="#22d3ee"/>
+                </linearGradient></defs>
+                <rect width="400" height="220" fill="url(#g1)"/>
+                <g fill="#fff" opacity="0.9">
+                  <rect x="40" y="60" width="140" height="14" rx="7"/>
+                  <rect x="40" y="90" width="90" height="10" rx="5" opacity="0.7"/>
+                  <circle cx="320" cy="110" r="42" fill="#fff" opacity="0.25"/>
+                  <rect x="40" y="150" width="70" height="34" rx="17" opacity="0.9"/>
+                </g>
+              </svg>
+            </div>
+            <div class="card__body">
+              <h3>Nimbus 协作平台</h3>
+              <p>面向远程团队的实时协作白板与任务看板，支持多人光标、离线编辑与版本回溯。</p>
+              <div class="chips chips--sm">
+                <span class="chip">React</span><span class="chip">WebSocket</span><span class="chip">CRDT</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__thumb card__thumb--2" aria-hidden="true">
+              <svg viewBox="0 0 400 220" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#f472b6"/><stop offset="100%" stop-color="#fb923c"/>
+                </linearGradient></defs>
+                <rect width="400" height="220" fill="url(#g2)"/>
+                <g fill="#fff" opacity="0.92">
+                  <rect x="40" y="50" width="120" height="12" rx="6"/>
+                  <rect x="40" y="120" width="320" height="60" rx="10" fill="#fff" opacity="0.18"/>
+                  <rect x="56" y="138" width="60" height="24" rx="12"/>
+                </g>
+              </svg>
+            </div>
+            <div class="card__body">
+              <h3>Pulse 数据看板</h3>
+              <p>为 SaaS 团队打造的自助式数据可视化平台，拖拽生成报表，毫秒级查询响应。</p>
+              <div class="chips chips--sm">
+                <span class="chip">Vue 3</span><span class="chip">Go</span><span class="chip">ClickHouse</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__thumb card__thumb--3" aria-hidden="true">
+              <svg viewBox="0 0 400 220" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <defs><linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#34d399"/><stop offset="100%" stop-color="#22d3ee"/>
+                </linearGradient></defs>
+                <rect width="400" height="220" fill="url(#g3)"/>
+                <g fill="#fff" opacity="0.92">
+                  <rect x="40" y="55" width="100" height="12" rx="6"/>
+                  <rect x="40" y="120" width="40" height="70" rx="8" opacity="0.85"/>
+                  <rect x="96" y="95" width="40" height="95" rx="8" opacity="0.7"/>
+                  <rect x="152" y="140" width="40" height="50" rx="8" opacity="0.55"/>
+                  <rect x="208" y="110" width="40" height="80" rx="8" opacity="0.4"/>
+                </g>
+              </svg>
+            </div>
+            <div class="card__body">
+              <h3>Orbit 设计系统</h3>
+              <p>一套覆盖 80+ 组件的跨端设计系统，配套代码生成器，让团队设计与开发效率翻倍。</p>
+              <div class="chips chips--sm">
+                <span class="chip">Figma</span><span class="chip">Storybook</span><span class="chip">Tokens</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section section--alt">
+      <div class="container">
+        <p class="section__eyebrow reveal">经历</p>
+        <h2 class="section__title reveal">我的职业旅程</h2>
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <span class="timeline__dot"></span>
+            <div class="timeline__content">
+              <p class="timeline__time">2023 — 至今</p>
+              <h3>高级全栈工程师 · 星辰科技</h3>
+              <p>负责核心 SaaS 产品线的架构演进与体验升级，带领 6 人小组完成从单体到微前端的迁移。</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__dot"></span>
+            <div class="timeline__content">
+              <p class="timeline__time">2021 — 2023</p>
+              <h3>全栈工程师 · 云栖创新</h3>
+              <p>从 0 到 1 搭建协作白板产品，支撑 10 万+ 月活用户，主导实时同步引擎的设计与实现。</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__dot"></span>
+            <div class="timeline__content">
+              <p class="timeline__time">2019 — 2021</p>
+              <h3>前端工程师 · 极光网络</h3>
+              <p>参与电商平台大促活动页体系建设，沉淀组件库与搭建工具，页面上线效率提升 3 倍。</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact reveal">
+          <p class="section__eyebrow">联系我</p>
+          <h2 class="section__title">有想法？一起聊聊</h2>
+          <p class="contact__lead">
+            无论是项目合作、技术交流还是只是想打个招呼，欢迎随时联系我。我会尽快回复。
+          </p>
+          <div class="contact__actions">
+            <a href="mailto:hello@linxiao.dev" class="btn btn--primary">hello@linxiao.dev</a>
+            <div class="contact__links">
+              <a href="#" class="link" aria-label="GitHub">GitHub</a>
+              <span class="sep">·</span>
+              <a href="#" class="link" aria-label="Twitter">Twitter</a>
+              <span class="sep">·</span>
+              <a href="#" class="link" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 林晓. 保留所有权利.</p>
+      <p class="footer__sub">用 ♥ 与代码打造</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
